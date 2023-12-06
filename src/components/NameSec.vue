@@ -21,9 +21,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="w-[50vw] h-[80vh] relative z-2  flex flex-col  items-center ">
-    <h1 class="text-9xl pl-20 ml-20"><span class="font-old">I A</span>M</h1>
-    <h1 class="text-9xl">
+  <div class="">
+    <h1 class=""><span class="font-old">I A</span>M</h1>
+    <h1 class="">
       <span>H</span>
       <span :class="changeFont.value ? 'font-old' : ''">US</span>
       <span>S</span>

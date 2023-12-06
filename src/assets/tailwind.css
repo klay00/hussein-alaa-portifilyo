@@ -6,11 +6,39 @@ body{
     background-color: black;
     font-family: 'Pixelify Sans', sans-serif;
     color: white;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 canvas{
     position: fixed;
     z-index: -10;
     height: 100vh;
+    width: 100%;
+}
+.pos-bt{
+    bottom: 20px;
+}
+.pos-right{
+    right:20px;
+}
+.pos-left{
+    left:20px;
+}
+.contact{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.main-contact{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: end;
     width: 100%;
 }

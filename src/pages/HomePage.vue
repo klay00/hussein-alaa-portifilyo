@@ -3,7 +3,7 @@ import NavBar from '@/components/navBar.vue';
 import nameSectionVue from '@/components/nameSection.vue';
 </script>
 <template>
-    <div>
+    <div class="name-section">
         <div>
             <NavBar/>
         </div>
