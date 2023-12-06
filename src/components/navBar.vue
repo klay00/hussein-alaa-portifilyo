@@ -17,5 +17,8 @@
   border-bottom: 2px solid white;
   font-size: 18px;
   z-index: 500;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 </style>

@@ -43,12 +43,12 @@ createLetterInterval(L);
       <span :class="{ 'font-old': E }"> E</span>
       <span :class="{ 'font-old': I }"> I</span>
       <span :class="{ 'font-old': N }"> N</span>
-      <span :class="{ 'font-old': A }"> {{'   -  '}}A</span>
+    </h1>
+    <h1>
+      <span :class="{ 'font-old': A }">A</span>
       <span :class="{ 'font-old': L }"> L</span>
       <span :class="{ 'font-old': A }">A</span>
-      <span :class="{ 'font-old': A }">A</span>
-
-    </h1>
+      <span :class="{ 'font-old': A }">A</span></h1>
   </div>
 </template>
 <style>
@@ -73,11 +73,11 @@ createLetterInterval(L);
   align-items: center;
 }
 .font-rspons{
-  font-size: 4rem;
+  font-size: 3vw;
 }
 @media (max-width:768px) {
   .font-rspons{
-    font-size: 2rem;
+    font-size: 10vw;
   }
 }
 </style>
