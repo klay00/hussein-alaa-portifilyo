@@ -8,7 +8,7 @@ document.addEventListener('mousemove', mouseMoveFunc);
 function mouseMoveFunc(e) {
   const depth = 5;
   const moveX = (((e.pageX)-(window.innerWidth))/depth-800);
-  const moveY = (((e.pageY)-(window.innerHeight))/depth-1000);
+  const moveY = (((e.pageY)-(window.innerHeight))/depth-1500);
   gsap.to(".big-blue", {
     duration: 3,
     x: moveX,
