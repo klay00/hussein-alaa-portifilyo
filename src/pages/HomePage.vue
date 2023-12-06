@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import NavBar from '../components/navBar.vue';
-import nameSection from '../components/nameSection.vue';
+import NavBar from '@/components/navBar.vue';
+import nameSectionVue from '@/components/nameSection.vue';
 </script>
 <template>
     <div>
@@ -8,7 +8,7 @@ import nameSection from '../components/nameSection.vue';
             <NavBar/>
         </div>
         <div>
-            <nameSection/>
+            <nameSectionVue/>
         </div>
     </div>
 </template>
