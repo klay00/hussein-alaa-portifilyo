@@ -16,7 +16,7 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
      </div>
     </div>
 </template>
-<style>
+<style lang="scss">
 .ImageSection{
     margin-top: 8vh;
     height: 100vh;
@@ -24,6 +24,13 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
     flex-wrap: wrap;
     z-index: -201;
     margin: 0 10vw;
+    overflow: hidden;
+    @media screen and ( min-width: 790px ) {
+        .image-dis{
+            width: 33.333%;
+            height: 50%;        
+        }
+    }
 }
 .image-dis{
     width: 50%;

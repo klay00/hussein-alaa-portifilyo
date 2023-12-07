@@ -54,6 +54,7 @@ createLetterInterval(L);
 <style>
 .main-text{
   text-align: center;
+  margin-top: 100px;
 }
 .flex{
   display: flex;
@@ -77,7 +78,7 @@ createLetterInterval(L);
 }
 @media (max-width:768px) {
   .font-rspons{
-    font-size: 10vw;
+    font-size: 8vw;
   }
 }
 </style>

@@ -38,21 +38,24 @@ function mouseMoveFunc(e) {
         }"
       ></div>
     </div>
+
     <div class="main-contact absolute pos-bt">
-      <div class=" pos-bt pos-right" > 
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide tracking-wide"  v-for="item in slides" :key="item">
-            <li><a href="#">{{item}}</a></li>
+      <a href="mailto: hussein.alaa.div@gmaail.com" >
+        <div class=" pos-bt pos-right" > 
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide tracking-wide"  v-for="item in slides" :key="item">
+              <li><a href="#">{{item}}</a></li>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      </a>
   
     <div class="contact"> 
-       <a href="#">Linkedin</a>
-       <a href="#">instgram</a>
-       <a href="#">Github</a>
+       <a href="https://www.linkedin.com/in/hussein-alaa-4a350a274" target="_blank">Linkedin</a>
+       <a href="https://www.instagram.com/ooker_a/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">instagram</a>
+       <a href="https://github.com/klay00" target="_blank">Github</a>
     </div>
     </div>
   </div>
@@ -101,6 +104,12 @@ function mouseMoveFunc(e) {
     position: absolute;
     top: -100;
     left: -200;
+    @media screen and (max-width:750px) {
+      .big-blue {
+        max-height: 1000px;
+        max-width: 1000px;
+      }
+    }
   }
   @mixin white-gradient {
     background: linear-gradient(to right,  rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) 100%);
