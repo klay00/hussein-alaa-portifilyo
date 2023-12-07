@@ -1,7 +1,18 @@
+<script setup lang="ts">
+import img1 from '../assets/image/img1.png'
+import img2 from '../assets/image/img2.png'
+import img3 from '../assets/image/img3.png'
+import img4 from '../assets/image/img4.jpeg'
+import img5 from '../assets/image/img5.png'
+import img6 from '../assets/image/img6.png'
+import img7 from '../assets/image/img7.png'
+import img8 from '../assets/image/img8.png'
+const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
+ </script>
 <template>
     <div class="ImageSection">
-     <div class="image-dis" v-for="i in 8" :key="i">
-        <img src="../assets/image/img1.png" alt="">
+     <div class="image-dis" v-for="(item , i) in images" :key="i">
+        <img :src="item" alt="">
      </div>
     </div>
 </template>
@@ -12,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     z-index: -201;
+    margin: 0 10vw;
 }
 .image-dis{
     width: 50%;
