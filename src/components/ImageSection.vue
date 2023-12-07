@@ -25,6 +25,7 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
     z-index: -201;
     margin: 0 10vw;
     overflow: hidden;
+    position: relative;
     @media screen and ( min-width: 790px ) {
         .image-dis{
             width: 33.333%;
@@ -42,8 +43,9 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
     width: 100%;
     height: 100%;
     object-fit: fill;
-    opacity: 0.4;
+    opacity: 1;
     z-index: -202;
 
 }
+
 </style>

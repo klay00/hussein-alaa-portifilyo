@@ -6,17 +6,22 @@ import ImageSection from '@/components/ImageSection.vue';
 </script>
 <template>
     <div class="name-section">
-        <div>
+        <div > 
             <NavBar/>
         </div>
-        <div>
+        <div class="pagesize"> 
             <nameSectionVue/>
         </div>
-        <div>
+        <div class="pagesize"> 
             <ImageSection/>
         </div>
-        <div>
+        <div class="pagesize"> 
             <Gridsection/>
         </div>
     </div>
 </template>
+<style>
+.pagesize{
+    height: 130vh;
+}
+</style>
