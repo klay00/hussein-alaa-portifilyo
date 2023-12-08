@@ -45,7 +45,7 @@ const skills =['Vue' , 'react' ,'nuxt','vuexy','javascript','typescript','html',
 <style scoped>
 .SkilsSection{
     padding: 3vw;
-
+    
     h1{
         border-bottom:2px solid white;
         width: auto;

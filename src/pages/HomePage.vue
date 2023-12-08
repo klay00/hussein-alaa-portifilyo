@@ -26,6 +26,6 @@ import ImageSection from '@/components/ImageSection.vue';
 </template>
 <style>
 .pagesize{
-    height: 130vh;
+    min-height: 130vh;
 }
 </style>
