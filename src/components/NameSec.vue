@@ -35,7 +35,7 @@ createLetterInterval(L);
       <span :class="{ 'font-old': A }"> A</span>
       <span :class="{ 'font-old': M }"> M</span>
     </h1>
-    <h1>
+    <h2>
       <span :class="{ 'font-old': H }"> H</span>
       <span :class="{ 'font-old': U }"> U</span>
       <span :class="{ 'font-old': S1 }"> S</span>
@@ -43,13 +43,18 @@ createLetterInterval(L);
       <span :class="{ 'font-old': E }"> E</span>
       <span :class="{ 'font-old': I }"> I</span>
       <span :class="{ 'font-old': N }"> N</span>
-    </h1>
-    <h1>
+    </h2>
+    <h2>
       <span :class="{ 'font-old': A }">A</span>
       <span :class="{ 'font-old': L }"> L</span>
       <span :class="{ 'font-old': A }">A</span>
-      <span :class="{ 'font-old': A }">A</span></h1>
+      <span :class="{ 'font-old': A }">A</span>
+    </h2>
+      <h2 class="font-old">
+        Front-End Developer
+  </h2>
   </div>
+
 </template>
 <style>
 .main-text{

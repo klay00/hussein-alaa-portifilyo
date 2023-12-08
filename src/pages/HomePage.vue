@@ -2,6 +2,7 @@
 import NavBar from '@/components/navBar.vue';
 import nameSectionVue from '@/components/nameSection.vue';
 import Gridsection from '@/components/Gridsection.vue';
+import SkilsSection from '@/components/SkilsSection.vue';
 import ImageSection from '@/components/ImageSection.vue';
 </script>
 <template>
@@ -11,6 +12,9 @@ import ImageSection from '@/components/ImageSection.vue';
         </div>
         <div class="pagesize"> 
             <nameSectionVue/>
+        </div>
+        <div class="pagesize"> 
+            <SkilsSection/>
         </div>
         <div class="pagesize"> 
             <ImageSection/>
