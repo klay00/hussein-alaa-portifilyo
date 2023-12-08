@@ -60,16 +60,20 @@ createLetterInterval(L);
 .main-text{
   text-align: center;
   margin-top: 100px;
+  h1 {
+    padding: 0;
+    margin: 0;
+ }
+ h2 {
+   padding: 0;
+   margin: 0;
+}
 }
 .flex{
   display: flex;
   height: 100%;
   flex-wrap: wrap;
-  h1 {
-     padding: 0;
-     margin: 0;
-     height: auto;
-  }
+
 }
 .jst-center{
   justify-content: center;
@@ -79,7 +83,7 @@ createLetterInterval(L);
   align-items: center;
 }
 .font-rspons{
-  font-size: 3vw;
+  font-size: 2vw;
 }
 @media (max-width:768px) {
   .font-rspons{
