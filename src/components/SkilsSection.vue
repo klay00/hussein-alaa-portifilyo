@@ -11,7 +11,7 @@ const skills =['Vue' , 'react' ,'nuxt','vuexy','javascript','typescript','html',
             </h1>
             <h3 class="about font-old">
                 Web Developer passionate about metrics and beating former 
-    personal achievements. Well-versed in React.js to create realworld responsive websites, with a strong skill set in working closely with team members to ensure workloads are effectively redirected to bottlenecks, and a background in Graphic Design.
+    personal achievements. Well-versed in Vue or React.js  to create real world responsive websites, with a strong skill set in working closely with team members to ensure workloads are effectively redirected to bottlenecks, and a background in Graphic Design.
             </h3>
             
         </div>
