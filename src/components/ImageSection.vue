@@ -29,21 +29,8 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
       <div class="container">
         <h1 class="text font-old">Education<span>Computer Engineering</span></h1>
         <h1 class="text font-old">Courses<span>Masarat Program USADI</span></h1>
-        <h1 class="text font-old">CRAZYYY<span>CRAZYYY</span></h1>
-        <h1 class="text font-old">
-          HOVER ON ME<span
-            ><a href="https://stacksorted.com/text-effects/minh-pham" target="_blank"
-              >SOURCE</a
-            ></span
-          >
-        </h1>
-        <h1 class="text font-old">
-          LIKE THIS?<span
-            ><a href="https://twitter.com/juxtopposed" target="_blank"
-              >LET'S CONNECT</a
-            ></span
-          >
-        </h1>
+        <h1 class="text font-old">Udemy<span>Front End basics HTML and CSS</span></h1>
+        <h1 class="text font-old">self learning<span>Read the documents very well</span></h1>
       </div>
     </div>
   </template>
@@ -97,7 +84,8 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
   }
   
   .text {
-    font-size: 10rem;
+    flex: 1;
+    font-size: 8rem;
     letter-spacing: -.01em;
     line-height: 100%;
     margin: 0;
@@ -121,7 +109,7 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
   }
   @media screen and (max-width: 740px) {
     .text , span {
-        font-size: 5rem;
+        font-size: 4rem;
         height: 100%;
     }
   }
@@ -131,7 +119,7 @@ const images =[img1 , img2 , img3 , img4 , img5 , img6 ,img7 , img8]
     height: 100%;
     background-color: #ce4247;
     color: #0D0D0D;
-    
+    font-size: 7rem;
     clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
     transform-origin: center;
     transition: all cubic-bezier(.1,.5,.5,1) 0.4s;

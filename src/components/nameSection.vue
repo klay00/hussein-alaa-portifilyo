@@ -56,7 +56,7 @@ function mouseMoveFunc(e) {
        <a href="https://www.linkedin.com/in/hussein-alaa-4a350a274" target="_blank">Linkedin</a>
        <a href="https://www.instagram.com/ooker_a/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">instagram</a>
        <a href="https://github.com/klay00" target="_blank">Github</a>
-       <a href="https://wa.me/07812364039" target="_blank">WhatsApp</a>
+       <a href="https://wa.me/+9647812364039" target="_blank">WhatsApp</a>
     </div>
     </div>
   </div>
