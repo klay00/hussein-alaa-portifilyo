@@ -67,7 +67,7 @@
   
   .text {
     flex: 1;
-    font-size: 8rem;
+    font-size: 7rem;
     letter-spacing: -.01em;
     line-height: 100%;
     margin: 0;
@@ -101,7 +101,6 @@
     height: 100%;
     background-color: #ce4247;
     color: #0D0D0D;
-    font-size: 7rem;
     clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
     transform-origin: center;
     transition: all cubic-bezier(.1,.5,.5,1) 0.4s;

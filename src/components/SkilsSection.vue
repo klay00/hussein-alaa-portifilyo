@@ -55,6 +55,11 @@ const skills =['Vue' , 'react' ,'nuxt','vuexy','javascript','typescript','html',
 .about{
     width: 50vw;
 }
+@media screen and (max-width:750px) {
+    .about{
+        width: 90vw;
+    }
+}
 .about2{
     padding: 3vw;
     direction: rtl;
