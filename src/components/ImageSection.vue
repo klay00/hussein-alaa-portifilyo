@@ -1,21 +1,3 @@
-<template>
-    <div class="relative edu-section">
-      <!-- Image Section -->
-      <div class="ImageSection">
-        <div class="image-dis" v-for="(item, i) in images" :key="i">
-          <img :src="item" alt="">
-        </div>
-      </div>
-  
-      <!-- Text Effect Section -->
-      <div class="container">
-        <h1 class="text font-old">Education<span>Computer Engineering</span></h1>
-        <h1 class="text font-old">Courses<span>Masarat Program USADI</span></h1>
-        <h1 class="text font-old">Udemy<span>Front End basics HTML and CSS</span></h1>
-        <h1 class="text font-old">self learning<span>Read the documents very well</span></h1>
-      </div>
-    </div>
-  </template>
   
   <script setup lang="ts">
   import gsap from 'gsap';
@@ -49,6 +31,25 @@
     });
   });
   </script>
+  <template>
+    <div class="relative edu-section">
+      <!-- Image Section -->
+      <div class="ImageSection">
+        <div class="image-dis" v-for="(item, i) in images" :key="i">
+          <img :src="item" alt="">
+        </div>
+      </div>
+  
+      <!-- Text Effect Section -->
+      <div class="container">
+        <h1 class="text font-old">Education<span>Computer Engineering</span></h1>
+        <h1 class="text font-old">Courses<span>Masarat Program USADI</span></h1>
+        <h1 class="text font-old">Udemy<span>Front End basics HTML and CSS</span></h1>
+        <h1 class="text font-old">self learning<span>Read the documents very well</span></h1>
+      </div>
+    </div>
+  </template>
+
   
 <style lang="scss" scoped>
 .edu-section{
@@ -139,7 +140,7 @@
     width: 50%;
     height: 25%;
     z-index: -203;
-    opacity: 0.4;
+    opacity: 0.7;
 
 }
 .image-dis img{
