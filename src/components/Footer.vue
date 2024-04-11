@@ -63,8 +63,7 @@
    gap: var(--m);
  
    position: fixed;
-   margin: calc(2 * var(--m)) calc(5 * var(--m)) calc(5 * var(--m))
-     calc(5 * var(--m));
+   margin: calc(2 * var(--m)) calc(5 * var(--m)) calc(5 * var(--m)) calc(5 * var(--m));
  }
  
  button {
@@ -143,8 +142,7 @@
  .col2, .col3 {
    background-color: #121212;
    border-radius: calc(0.5 * var(--m))
-   padding: 5px;
- }
+  }
  
  img {
    height: calc(0.3 * var(--m));

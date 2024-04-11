@@ -8,6 +8,7 @@ import Gridsection from "@/components/Gridsection.vue";
 import SkilsSection from "@/components/SkilsSection.vue";
 import ImageSection from "@/components/ImageSection.vue";
 import Footer from "@/components/Footer.vue";
+import Contact from "@/components/Contact.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,8 +42,8 @@ function setupScrollAnimations(element: HTMLElement | null) {
       duration: 1.5,
       scrollTrigger: {
         trigger: element,
-        start: "top 80%", // Adjust as needed
-        end: "bottom 20%", // Adjust as needed
+        start: "top 80%",  
+        end: "bottom 20%",  
         toggleActions: "play none none reverse",
       },
     }
@@ -68,6 +69,7 @@ function setupScrollAnimations(element: HTMLElement | null) {
       <Gridsection />
     </div>
     <div >
+      <!-- <Contact/> -->
       <Footer />
     </div>
   </div>
