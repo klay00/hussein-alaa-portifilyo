@@ -8,7 +8,6 @@ import Gridsection from "@/components/Gridsection.vue";
 import SkilsSection from "@/components/SkilsSection.vue";
 import ImageSection from "@/components/ImageSection.vue";
 import Footer from "@/components/Footer.vue";
-import Contact from "@/components/Contact.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,20 +55,19 @@ function setupScrollAnimations(element: HTMLElement | null) {
     <div>
       <NavBar />
     </div>
-    <div class="pagesize" ref="nameSectionRef">
+    <div class="pagesize" ref="nameSectionRef" id="name-section">
       <nameSectionVue />
     </div>
-    <div class="pagesize" ref="skilsSectionRef">
+    <div class="pagesize" ref="skilsSectionRef" id="skils-section">
       <SkilsSection />
     </div>
-    <div class="pagesize" ref="imageSectionRef">
+    <div class="pagesize" ref="imageSectionRef" id="image-section">
       <ImageSection />
     </div>
-    <div class="h-25" ref="gridSectionRef">
+    <div class="h-25" ref="gridSectionRef" id="grid-section">
       <Gridsection />
     </div>
     <div >
-      <!-- <Contact/> -->
       <Footer />
     </div>
   </div>

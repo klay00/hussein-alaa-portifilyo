@@ -25,7 +25,7 @@ const props = defineProps<Props>();
 <style scoped>
 .card {
   width: 100%;
-  max-width: 350px;  
+  max-width: 310px;  
   height: auto;
   transition: all 0.2s;
   position: relative;
@@ -53,7 +53,7 @@ const props = defineProps<Props>();
 
 .card-image {
     width: 100%;
-    min-height: 300px;
+    min-height: 230px;
     border-radius: 8px;
 }
 
