@@ -67,7 +67,7 @@ function setupScrollAnimations(element: HTMLElement | null) {
     <div class="h-25" ref="gridSectionRef">
       <Gridsection />
     </div>
-    <div class="footer">
+    <div >
       <Footer />
     </div>
   </div>
@@ -77,7 +77,7 @@ function setupScrollAnimations(element: HTMLElement | null) {
 .pagesize {
   min-height: 130vh;
 }
-.footer{
+.footers {
   height: 50vh;
 }
 </style>

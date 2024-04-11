@@ -14,7 +14,7 @@ const props = defineProps<Props>();
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="card-inner">
-        <img src="https://via.placeholder.com/240x240" alt="Image" class="card-image">
+        <img src="https://uploads-ssl.webflow.com/61c181d8f24ef9de8bdb5e4c/61fa0060d14adbb7c48ea0b3_SHOWREEL-THUMB.gif" alt="Image" class="card-image">
         <h2 class="card-title">{{ title }}</h2>
         <p class="card-description">{{ description }}</p>
       </div>
@@ -26,7 +26,7 @@ const props = defineProps<Props>();
 .card {
   width: 100%;
   max-width: 350px;  
-  height: auto; /* This will make the card responsive in height as well */
+  height: auto;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
@@ -35,7 +35,7 @@ const props = defineProps<Props>();
 
 .card-inner {
     width: inherit;
-    height: inherit;
+    min-height: 450px;
     background: rgba(255,255,255,.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
@@ -53,7 +53,7 @@ const props = defineProps<Props>();
 
 .card-image {
     width: 100%;
-    height: auto;
+    min-height: 300px;
     border-radius: 8px;
 }
 
