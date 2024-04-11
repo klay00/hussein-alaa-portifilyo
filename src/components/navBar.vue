@@ -1,6 +1,6 @@
 <script setup lang="ts">
  import { ref } from 'vue';
-const isDialogOpen =ref(false)
+ const isDialogOpen =ref(false)
 const openDialog =()=>{
   isDialogOpen.value = !isDialogOpen.value 
 
@@ -9,9 +9,9 @@ const openDialog =()=>{
 
 <template>
   <div class="nav-bar">
-    <a href="/" class="text-xl">
+    <RouterLink  to="/" class="text-xl">
        HUSSEIN ALAA
-    </a>
+    </RouterLink>
     <button @click="openDialog" class="contact-button">Contact</button>
    </div>
 </template>

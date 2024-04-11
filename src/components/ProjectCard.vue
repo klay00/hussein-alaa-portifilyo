@@ -1,5 +1,15 @@
+<script setup lang="ts">
+import { defineProps } from 'vue';
+ interface Props{
+  id: Number,
+  title: String,
+  description: String,
+  src:String
+  path?:String // path to the source blank page
+}
+const props = defineProps<Props>();
+</script>
 <template>
-  <RouterLink :to="'/projects/' + id" class="card-link ">
     <div class="card">
       <div class="circle"></div>
       <div class="circle"></div>
@@ -9,24 +19,13 @@
         <p class="card-description">{{ description }}</p>
       </div>
     </div>
-  </RouterLink >
 </template>
 
-<script setup lang="ts">
-import { defineProps } from 'vue';
-interface Props{
-  id: Number,
-  title: String,
-  description: String,
-  src:String
-}
-const props = defineProps<Props>();
-</script>
 
 <style scoped>
 .card {
   width: 100%;
-  max-width: 450px; /* Optional: set a max-width for larger screens */
+  max-width: 350px;  
   height: auto; /* This will make the card responsive in height as well */
   transition: all 0.2s;
   position: relative;
@@ -48,7 +47,8 @@ const props = defineProps<Props>();
 }
 
 .card:hover {
-    transform: scale(1.04) rotate(1deg);
+    transform: scale(1.2) rotate(1deg);
+    z-index: 1000;
 }
 
 .card-image {
