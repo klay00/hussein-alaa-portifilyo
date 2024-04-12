@@ -99,5 +99,8 @@ const navItems = [
   align-items: center;
   width: 100%;
   flex: 5;
+  span {
+    cursor: pointer;
+  }
 }
 </style>
