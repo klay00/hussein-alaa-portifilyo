@@ -58,7 +58,7 @@ function setupScrollAnimations(element: HTMLElement | null) {
     <div class="pagesize" ref="nameSectionRef" id="name-section">
       <nameSectionVue />
     </div>
-    <div class="pagesize" ref="skilsSectionRef" id="skils-section">
+    <div class="pagesize" ref="skilsSectionRef" id="skills-section">
       <SkilsSection />
     </div>
     <div class="pagesize" ref="imageSectionRef" id="image-section">
