@@ -1,3 +1,35 @@
+<script setup lang="ts">
+import { ref } from "vue";
+import {
+  VBtn,
+  VIcon,
+  VList,
+  VListItem,
+  VListItemTitle,
+  VSlideYTransition,
+  VSpacer,
+} from "vuetify/components";
+const showNavLinks = ref(false);
+const showBtnNav = ref(false);
+window.addEventListener("resize", () => {
+  showBtnNav.value = window.innerWidth >= 740;
+});
+const scrollToSection = (selector: string) => {
+  showNavLinks.value = false;
+  const targetElement = document.querySelector(selector);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
+const navItems = [
+  { label: "Main", section: "#name-section" },
+  { label: "Work and Skills", section: "#skills-section" },
+  { label: "Education", section: "#image-section" },
+  { label: "Projects", section: "#grid-section" },
+];
+</script>
+
 <template>
   <div>
     <div class="nav-bar">
@@ -32,38 +64,6 @@
     </VSlideYTransition>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref } from "vue";
-import {
-  VBtn,
-  VIcon,
-  VList,
-  VListItem,
-  VListItemTitle,
-  VSlideYTransition,
-  VSpacer,
-} from "vuetify/components";
-const showNavLinks = ref(false);
-const showBtnNav = ref(false);
-window.addEventListener("resize", () => {
-  showBtnNav.value = window.innerWidth >= 740;
-});
-const scrollToSection = (selector: string) => {
-  showNavLinks.value = false;
-  const targetElement = document.querySelector(selector);
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-};
-
-const navItems = [
-  { label: "Main", section: "#name-section" },
-  { label: "Work and Skills", section: "#skills-section" },
-  { label: "Education", section: "#image-section" },
-  { label: "Projects", section: "#grid-section" },
-];
-</script>
 
 <style scoped lang="scss">
 .zIndex-1000 {
