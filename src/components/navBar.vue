@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import {
-  VBtn,
-  VIcon,
   VList,
   VListItem,
   VListItemTitle,
   VSlideYTransition,
-  VSpacer,
 } from "vuetify/components";
-const showNavLinks = ref(false);
+ const showNavLinks = ref(false);
 const showBtnNav = ref(false);
 window.addEventListener("resize", () => {
   showBtnNav.value = window.innerWidth >= 740;
@@ -34,8 +31,14 @@ const navItems = [
   <div>
     <div class="nav-bar">
       <RouterLink to="/" class="text-xl">HUSSEIN ALAA</RouterLink>
-      <VSpacer />
-      <div v-if="showBtnNav" class="nav-bar-links">
+      <div  v-if="!showBtnNav"   class="text-xl">
+        <button class="menu-btn"  @click="showNavLinks = !showNavLinks"   >
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+        </button>
+      </div>
+       <div v-else class="nav-bar-links">
         <div
           v-for="(item, index) in navItems"
           :key="index"
@@ -45,12 +48,9 @@ const navItems = [
           <span>{{ item.label }}</span>
         </div>
       </div>
-
-      <VBtn @click="showNavLinks = !showNavLinks" v-else>
-        <VIcon>{{ showNavLinks ? "mdi-menu" : "mdi-close" }}</VIcon>
-      </VBtn>
+    
     </div>
-    <VSlideYTransition class="zIndex-1000">
+    <VSlideYTransition class="zIndex-1000" theme="dark">
       <VList v-if="showNavLinks" dense>
         <VListItem
           v-for="(item, index) in navItems"
@@ -58,7 +58,7 @@ const navItems = [
           link
           @click="scrollToSection(item.section)"
         >
-          <VListItemTitle>{{ item.label }}</VListItemTitle>
+          <VListItemTitle >{{ item.label }}</VListItemTitle>
         </VListItem>
       </VList>
     </VSlideYTransition>
@@ -102,5 +102,16 @@ const navItems = [
   span {
     cursor: pointer;
   }
+}
+.menu {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  cursor: pointer;
+  margin: 4px 0;
+}
+.menu-btn{
+  background-color: transparent;
+  border: none;
 }
 </style>
