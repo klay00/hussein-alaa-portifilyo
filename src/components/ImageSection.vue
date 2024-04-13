@@ -68,7 +68,7 @@
   
   .text {
     flex: 1;
-    font-size: 7rem;
+    font-size: 4rem;
     letter-spacing: -.01em;
     line-height: 100%;
     margin: 0;
@@ -92,7 +92,7 @@
   }
   @media screen and (max-width: 740px) {
     .text , span {
-        font-size: 4rem;
+        font-size: 3rem;
         height: 100%;
     }
   }

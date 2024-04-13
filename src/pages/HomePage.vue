@@ -75,7 +75,7 @@ function setupScrollAnimations(element: HTMLElement | null) {
 
 <style>
 .pagesize {
-  min-height: 130vh;
+  min-height: 120vh;
 }
 .footers {
   height: 50vh;
