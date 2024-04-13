@@ -9,7 +9,7 @@ const projectList = [
 </script>
 <template>
     <VRow class="card-center">
-      <VCol v-for="project in projectList" :key="project.id" cols="12" lg="3" md="4" class="text-center card-center">
+      <VCol v-for="project in projectList" :key="project.id" cols="12" lg="3" md="4" class="card-center">
         <ProjectCard :title="project.title" :id="project.id" :description="project.description" :src="project.src"/>
       </VCol>
       </VRow>

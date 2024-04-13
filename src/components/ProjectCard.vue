@@ -25,17 +25,18 @@ const props = defineProps<Props>();
 <style scoped>
 .card {
   width: 100%;
-  max-width: 310px;  
+  max-width: 280px;  
   height: auto;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
-  margin-bottom: 20px; /* Optional: Add margin for spacing between cards */
+  margin-bottom: 20px;  
+  
 }
 
 .card-inner {
     width: inherit;
-    min-height: 450px;
+    min-height: 380px;
     background: rgba(255,255,255,.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
@@ -47,7 +48,7 @@ const props = defineProps<Props>();
 }
 
 .card:hover {
-    transform: scale(1.2) rotate(1deg);
+    transform: scale(1.02) rotate(1deg);
     z-index: 1000;
 }
 
