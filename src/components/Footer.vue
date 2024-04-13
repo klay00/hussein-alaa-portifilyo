@@ -153,6 +153,7 @@
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
+   flex-wrap: wrap;
    gap: 1rem;
  }
  
