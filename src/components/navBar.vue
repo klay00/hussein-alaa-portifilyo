@@ -6,14 +6,15 @@ import {
   VListItemTitle,
   VSlideYTransition,
 } from "vuetify/components";
- const showNavLinks = ref(false);
-const showBtnNav = ref(false);
+
+const showNavLinks = ref(false);
 const navItems = [
   { label: "Main", section: "#name-section" },
   { label: "Work and Skills", section: "#skills-section" },
   { label: "Education", section: "#image-section" },
   { label: "Projects", section: "#grid-section" },
 ];
+
 const scrollToSection = (selector: string) => {
   showNavLinks.value = false;
   const targetElement = document.querySelector(selector);
@@ -21,13 +22,12 @@ const scrollToSection = (selector: string) => {
     targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+const showBtnNav = ref({ value: window.innerWidth >= 740 });
 
-
-onMounted(() => {
-  window.addEventListener("resize", () => {
+window.addEventListener("resize", () => {
     showBtnNav.value = window.innerWidth >= 740;
-  });
-})
+});
+ 
 </script>
 
 <template>
