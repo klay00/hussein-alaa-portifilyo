@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from 'vue';
 import {
   VList,
   VListItem,
@@ -8,9 +8,12 @@ import {
 } from "vuetify/components";
  const showNavLinks = ref(false);
 const showBtnNav = ref(false);
-window.addEventListener("resize", () => {
-  showBtnNav.value = window.innerWidth >= 740;
-});
+const navItems = [
+  { label: "Main", section: "#name-section" },
+  { label: "Work and Skills", section: "#skills-section" },
+  { label: "Education", section: "#image-section" },
+  { label: "Projects", section: "#grid-section" },
+];
 const scrollToSection = (selector: string) => {
   showNavLinks.value = false;
   const targetElement = document.querySelector(selector);
@@ -19,12 +22,12 @@ const scrollToSection = (selector: string) => {
   }
 };
 
-const navItems = [
-  { label: "Main", section: "#name-section" },
-  { label: "Work and Skills", section: "#skills-section" },
-  { label: "Education", section: "#image-section" },
-  { label: "Projects", section: "#grid-section" },
-];
+
+onMounted(() => {
+  window.addEventListener("resize", () => {
+    showBtnNav.value = window.innerWidth >= 740;
+  });
+})
 </script>
 
 <template>
@@ -32,7 +35,7 @@ const navItems = [
     <div class="nav-bar">
       <RouterLink to="/" class="text-xl">HUSSEIN ALAA</RouterLink>
       <div  v-if="!showBtnNav"   class="text-xl">
-        <button class="menu-btn"  @click="showNavLinks = !showNavLinks"   >
+        <button class="menu-btn"  @click="showNavLinks = true"   >
           <div class="menu"></div>
           <div class="menu"></div>
           <div class="menu"></div>
@@ -50,28 +53,25 @@ const navItems = [
       </div>
     
     </div>
-    <VSlideYTransition class="zIndex-1000" theme="dark">
-      <VList v-if="showNavLinks" dense>
-        <VListItem
-          v-for="(item, index) in navItems"
-          :key="index"
-          link
-          @click="scrollToSection(item.section)"
-        >
-          <VListItemTitle >{{ item.label }}</VListItemTitle>
-        </VListItem>
-      </VList>
-    </VSlideYTransition>
+    <div class="overLay" @click="showNavLinks = false" v-if="showNavLinks" >
+      <VSlideYTransition class="zIndex-1000" theme="dark">
+        <VList  dense>
+          <VListItem
+            v-for="(item, index) in navItems"
+            :key="index"
+            link
+            @click="scrollToSection(item.section)"
+          >
+            <VListItemTitle >{{ item.label }}</VListItemTitle>
+          </VListItem>
+        </VList>
+      </VSlideYTransition>
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.zIndex-1000 {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 .nav-bar {
   height: 8vh;
   display: flex;
@@ -113,5 +113,19 @@ const navItems = [
 .menu-btn{
   background-color: transparent;
   border: none;
+}
+.zIndex-1000 {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.overLay{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.504);
 }
 </style>
